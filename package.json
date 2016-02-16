@@ -1,0 +1,16 @@
+{
+  "name": "wemo-discover",
+  "version": "1.0.0",
+  "description": "Simple local dicovery of wemo devices using node-ssdp - useful for debugging wemo on local network",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Adrian Rudman",
+  "license": "ISC",
+  "dependencies" : {
+    "node-ssdp" : "*",
+    "xml2js" : "*",
+    "request" : "*" 
+    }
+}
