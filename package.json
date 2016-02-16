@@ -8,6 +8,7 @@
   },
   "author": "Adrian Rudman",
   "license": "ISC",
+  "repository" : "https://github.com/rudders/wemo-discover.git"
   "dependencies" : {
     "node-ssdp" : "*",
     "xml2js" : "*",
