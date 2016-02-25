@@ -1,6 +1,6 @@
 {
   "name": "wemo-discover",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple local dicovery of wemo devices using node-ssdp - useful for debugging wemo on local network",
   "main": "index.js",
   "scripts": {

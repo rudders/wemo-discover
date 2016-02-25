@@ -17,10 +17,11 @@ client.on('response', function inResponse(headers, code, rinfo) {
 //       console.log(body);
       parseString(body, function (err, result) {
 //         console.dir(result, {"depth":null, "color":true});
-        var services = '\n';
+        console.log('Wemo %s found: %s (%s)', result.root.device[0].modelName,  result.root.device[0].friendlyName, headers.LOCATION)
+        var services = '';
         result.root.device[0].serviceList[0].service.forEach( function(elem) {
             services = services + elem.serviceType + ' - ' + elem.controlURL + '\n' });
-        console.log('Wemo %s found: %s (%s)', result.root.device[0].modelName,  result.root.device[0].friendlyName, headers.LOCATION, services)
+         console.log(services);
         })
     }
 })
